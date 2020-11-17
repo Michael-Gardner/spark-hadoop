@@ -11,9 +11,10 @@
 <div style="text-align: center;">
 <a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
 <a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
-</div><h2>Documentation for package &lsquo;SparkR&rsquo; version 2.4.3</h2>
+</div><h2>Documentation for package &lsquo;SparkR&rsquo; version 3.0.1</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
 </ul>
 
 <h2>Help Pages</h2>
@@ -43,6 +44,7 @@
 <a href="#U">U</a>
 <a href="#V">V</a>
 <a href="#W">W</a>
+<a href="#X">X</a>
 <a href="#Y">Y</a>
 <a href="#misc">misc</a>
 </p>
@@ -83,6 +85,10 @@
 <td>Calculates the approximate quantiles of numerical columns of a SparkDataFrame</td></tr>
 <tr><td style="width: 25%;"><a href="approxQuantile.html">approxQuantile-method</a></td>
 <td>Calculates the approximate quantiles of numerical columns of a SparkDataFrame</td></tr>
+<tr><td style="width: 25%;"><a href="column_aggregate_functions.html">approx_count_distinct</a></td>
+<td>Aggregate functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_aggregate_functions.html">approx_count_distinct-method</a></td>
+<td>Aggregate functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="arrange.html">arrange</a></td>
 <td>Arrange Rows by Variables</td></tr>
 <tr><td style="width: 25%;"><a href="arrange.html">arrange-method</a></td>
@@ -148,8 +154,6 @@
 <tr><td style="width: 25%;"><a href="as.data.frame.html">as.data.frame-method</a></td>
 <td>Download data from a SparkDataFrame into a R data.frame</td></tr>
 <tr><td style="width: 25%;"><a href="createDataFrame.html">as.DataFrame</a></td>
-<td>Create a SparkDataFrame</td></tr>
-<tr><td style="width: 25%;"><a href="createDataFrame.html">as.DataFrame.default</a></td>
 <td>Create a SparkDataFrame</td></tr>
 <tr><td style="width: 25%;"><a href="columnfunctions.html">asc</a></td>
 <td>A set of operations working with SparkDataFrame columns</td></tr>
@@ -225,11 +229,7 @@
 <td>Cache</td></tr>
 <tr><td style="width: 25%;"><a href="cacheTable.html">cacheTable</a></td>
 <td>Cache Table</td></tr>
-<tr><td style="width: 25%;"><a href="cacheTable.html">cacheTable.default</a></td>
-<td>Cache Table</td></tr>
 <tr><td style="width: 25%;"><a href="cancelJobGroup.html">cancelJobGroup</a></td>
-<td>Cancel active jobs for the specified group</td></tr>
-<tr><td style="width: 25%;"><a href="cancelJobGroup.html">cancelJobGroup.default</a></td>
 <td>Cancel active jobs for the specified group</td></tr>
 <tr><td style="width: 25%;"><a href="cast.html">cast</a></td>
 <td>Casts the column to a different data type.</td></tr>
@@ -253,11 +253,7 @@
 <td>checkpoint</td></tr>
 <tr><td style="width: 25%;"><a href="clearCache.html">clearCache</a></td>
 <td>Clear Cache</td></tr>
-<tr><td style="width: 25%;"><a href="clearCache.html">clearCache.default</a></td>
-<td>Clear Cache</td></tr>
 <tr><td style="width: 25%;"><a href="clearJobGroup.html">clearJobGroup</a></td>
-<td>Clear current job group ID and its description</td></tr>
-<tr><td style="width: 25%;"><a href="clearJobGroup.html">clearJobGroup.default</a></td>
 <td>Clear current job group ID and its description</td></tr>
 <tr><td style="width: 25%;"><a href="coalesce.html">coalesce</a></td>
 <td>Coalesce</td></tr>
@@ -377,11 +373,7 @@
 <td>Miscellaneous functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="createDataFrame.html">createDataFrame</a></td>
 <td>Create a SparkDataFrame</td></tr>
-<tr><td style="width: 25%;"><a href="createDataFrame.html">createDataFrame.default</a></td>
-<td>Create a SparkDataFrame</td></tr>
 <tr><td style="width: 25%;"><a href="createExternalTable-deprecated.html">createExternalTable</a></td>
-<td>(Deprecated) Create an external table</td></tr>
-<tr><td style="width: 25%;"><a href="createExternalTable-deprecated.html">createExternalTable.default</a></td>
 <td>(Deprecated) Create an external table</td></tr>
 <tr><td style="width: 25%;"><a href="createOrReplaceTempView.html">createOrReplaceTempView</a></td>
 <td>Creates a temporary view using the given name.</td></tr>
@@ -476,6 +468,10 @@
 <td>String functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_string_functions.html">decode-method</a></td>
 <td>String functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_math_functions.html">degrees</a></td>
+<td>Math functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_math_functions.html">degrees-method</a></td>
+<td>Math functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_window_functions.html">dense_rank</a></td>
 <td>Window functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_window_functions.html">dense_rank-method</a></td>
@@ -507,8 +503,6 @@
 <tr><td style="width: 25%;"><a href="nafunctions.html">dropna-method</a></td>
 <td>A set of SparkDataFrame functions working with NA values</td></tr>
 <tr><td style="width: 25%;"><a href="dropTempTable-deprecated.html">dropTempTable</a></td>
-<td>(Deprecated) Drop Temporary Table</td></tr>
-<tr><td style="width: 25%;"><a href="dropTempTable-deprecated.html">dropTempTable.default</a></td>
 <td>(Deprecated) Drop Temporary Table</td></tr>
 <tr><td style="width: 25%;"><a href="dropTempView.html">dropTempView</a></td>
 <td>Drops the temporary view with the given view name in the catalog.</td></tr>
@@ -582,6 +576,8 @@
 <td>Filter</td></tr>
 <tr><td style="width: 25%;"><a href="filter.html">filter-method</a></td>
 <td>Filter</td></tr>
+<tr><td style="width: 25%;"><a href="spark.prefixSpan.html">findFrequentSequentialPatterns-method</a></td>
+<td>PrefixSpan</td></tr>
 <tr><td style="width: 25%;"><a href="first.html">first</a></td>
 <td>Return the first row of a SparkDataFrame</td></tr>
 <tr><td style="width: 25%;"><a href="first.html">first-method</a></td>
@@ -616,6 +612,10 @@
 <td>Finding frequent items for columns, possibly with false positives</td></tr>
 <tr><td style="width: 25%;"><a href="spark.fpGrowth.html">freqItemsets-method</a></td>
 <td>FP-growth</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">from_csv</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">from_csv-method</a></td>
+<td>Collection functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_collection_functions.html">from_json</a></td>
 <td>Collection functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_collection_functions.html">from_json-method</a></td>
@@ -794,10 +794,6 @@
 <td>Join</td></tr>
 <tr><td style="width: 25%;"><a href="join.html">join-method</a></td>
 <td>Join</td></tr>
-<tr><td style="width: 25%;"><a href="read.json.html">jsonFile</a></td>
-<td>Create a SparkDataFrame from a JSON file.</td></tr>
-<tr><td style="width: 25%;"><a href="read.json.html">jsonFile.default</a></td>
-<td>Create a SparkDataFrame from a JSON file.</td></tr>
 </table>
 
 <h2><a name="K">-- K --</a></h2>
@@ -872,8 +868,6 @@
 <td>Non-aggregate functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="read.df.html">loadDF</a></td>
 <td>Load a SparkDataFrame</td></tr>
-<tr><td style="width: 25%;"><a href="read.df.html">loadDF.default</a></td>
-<td>Load a SparkDataFrame</td></tr>
 <tr><td style="width: 25%;"><a href="localCheckpoint.html">localCheckpoint</a></td>
 <td>localCheckpoint</td></tr>
 <tr><td style="width: 25%;"><a href="localCheckpoint.html">localCheckpoint-method</a></td>
@@ -917,9 +911,21 @@
 <h2><a name="M">-- M --</a></h2>
 
 <table width="100%">
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">map_concat</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">map_concat-method</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">map_entries</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">map_entries-method</a></td>
+<td>Collection functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_collection_functions.html">map_from_arrays</a></td>
 <td>Collection functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_collection_functions.html">map_from_arrays-method</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">map_from_entries</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">map_from_entries-method</a></td>
 <td>Collection functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_collection_functions.html">map_keys</a></td>
 <td>Collection functions for Column operations</td></tr>
@@ -1045,15 +1051,15 @@
 <td>over</td></tr>
 <tr><td style="width: 25%;"><a href="over.html">over-method</a></td>
 <td>over</td></tr>
+<tr><td style="width: 25%;"><a href="column_string_functions.html">overlay</a></td>
+<td>String functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_string_functions.html">overlay-method</a></td>
+<td>String functions for Column operations</td></tr>
 </table>
 
 <h2><a name="P">-- P --</a></h2>
 
 <table width="100%">
-<tr><td style="width: 25%;"><a href="read.parquet.html">parquetFile</a></td>
-<td>Create a SparkDataFrame from a Parquet file.</td></tr>
-<tr><td style="width: 25%;"><a href="read.parquet.html">parquetFile.default</a></td>
-<td>Create a SparkDataFrame from a Parquet file.</td></tr>
 <tr><td style="width: 25%;"><a href="partitionBy.html">partitionBy</a></td>
 <td>partitionBy</td></tr>
 <tr><td style="width: 25%;"><a href="partitionBy.html">partitionBy-method</a></td>
@@ -1082,6 +1088,8 @@
 <td>Collection functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_collection_functions.html">posexplode_outer-method</a></td>
 <td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="PowerIterationClustering-class.html">PowerIterationClustering-class</a></td>
+<td>S4 class that represents a PowerIterationClustering</td></tr>
 <tr><td style="width: 25%;"><a href="predict.html">predict</a></td>
 <td>Makes predictions from a MLlib model</td></tr>
 <tr><td style="width: 25%;"><a href="spark.als.html">predict-method</a></td>
@@ -1114,6 +1122,8 @@
 <td>Accelerated Failure Time (AFT) Survival Regression Model</td></tr>
 <tr><td style="width: 25%;"><a href="spark.svmLinear.html">predict-method</a></td>
 <td>Linear SVM Model</td></tr>
+<tr><td style="width: 25%;"><a href="PrefixSpan-class.html">PrefixSpan-class</a></td>
+<td>S4 class that represents a PrefixSpan</td></tr>
 <tr><td style="width: 25%;"><a href="print.jobj.html">print.jobj</a></td>
 <td>Print a JVM object reference.</td></tr>
 <tr><td style="width: 25%;"><a href="print.structField.html">print.structField</a></td>
@@ -1158,6 +1168,10 @@
 <h2><a name="R">-- R --</a></h2>
 
 <table width="100%">
+<tr><td style="width: 25%;"><a href="column_math_functions.html">radians</a></td>
+<td>Math functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_math_functions.html">radians-method</a></td>
+<td>Math functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_nonaggregate_functions.html">rand</a></td>
 <td>Non-aggregate functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_nonaggregate_functions.html">rand-method</a></td>
@@ -1188,13 +1202,9 @@
 <td>Union two or more SparkDataFrames</td></tr>
 <tr><td style="width: 25%;"><a href="read.df.html">read.df</a></td>
 <td>Load a SparkDataFrame</td></tr>
-<tr><td style="width: 25%;"><a href="read.df.html">read.df.default</a></td>
-<td>Load a SparkDataFrame</td></tr>
 <tr><td style="width: 25%;"><a href="read.jdbc.html">read.jdbc</a></td>
 <td>Create a SparkDataFrame representing the database table accessible via JDBC URL</td></tr>
 <tr><td style="width: 25%;"><a href="read.json.html">read.json</a></td>
-<td>Create a SparkDataFrame from a JSON file.</td></tr>
-<tr><td style="width: 25%;"><a href="read.json.html">read.json.default</a></td>
 <td>Create a SparkDataFrame from a JSON file.</td></tr>
 <tr><td style="width: 25%;"><a href="read.ml.html">read.ml</a></td>
 <td>Load a fitted MLlib model from the input path.</td></tr>
@@ -1202,13 +1212,9 @@
 <td>Create a SparkDataFrame from an ORC file.</td></tr>
 <tr><td style="width: 25%;"><a href="read.parquet.html">read.parquet</a></td>
 <td>Create a SparkDataFrame from a Parquet file.</td></tr>
-<tr><td style="width: 25%;"><a href="read.parquet.html">read.parquet.default</a></td>
-<td>Create a SparkDataFrame from a Parquet file.</td></tr>
 <tr><td style="width: 25%;"><a href="read.stream.html">read.stream</a></td>
 <td>Load a streaming SparkDataFrame</td></tr>
 <tr><td style="width: 25%;"><a href="read.text.html">read.text</a></td>
-<td>Create a SparkDataFrame from a text file.</td></tr>
-<tr><td style="width: 25%;"><a href="read.text.html">read.text.default</a></td>
 <td>Create a SparkDataFrame from a text file.</td></tr>
 <tr><td style="width: 25%;"><a href="recoverPartitions.html">recoverPartitions</a></td>
 <td>Recovers all the partitions in the directory of a table and update the catalog</td></tr>
@@ -1295,10 +1301,6 @@
 <td>Sample</td></tr>
 <tr><td style="width: 25%;"><a href="sample.html">sample_frac-method</a></td>
 <td>Sample</td></tr>
-<tr><td style="width: 25%;"><a href="write.parquet.html">saveAsParquetFile</a></td>
-<td>Save the contents of SparkDataFrame as a Parquet file, preserving the schema.</td></tr>
-<tr><td style="width: 25%;"><a href="write.parquet.html">saveAsParquetFile-method</a></td>
-<td>Save the contents of SparkDataFrame as a Parquet file, preserving the schema.</td></tr>
 <tr><td style="width: 25%;"><a href="saveAsTable.html">saveAsTable</a></td>
 <td>Save the contents of the SparkDataFrame to a data source as a table</td></tr>
 <tr><td style="width: 25%;"><a href="saveAsTable.html">saveAsTable-method</a></td>
@@ -1311,6 +1313,14 @@
 <td>Get schema object</td></tr>
 <tr><td style="width: 25%;"><a href="schema.html">schema-method</a></td>
 <td>Get schema object</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">schema_of_csv</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">schema_of_csv-method</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">schema_of_json</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">schema_of_json-method</a></td>
+<td>Collection functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_aggregate_functions.html">sd</a></td>
 <td>Aggregate functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_aggregate_functions.html">sd-method</a></td>
@@ -1334,8 +1344,6 @@
 <tr><td style="width: 25%;"><a href="setJobDescription.html">setJobDescription</a></td>
 <td>Set a human readable description of the current job.</td></tr>
 <tr><td style="width: 25%;"><a href="setJobGroup.html">setJobGroup</a></td>
-<td>Assigns a group ID to all the jobs started by this thread until the group ID is set to a different value or cleared.</td></tr>
-<tr><td style="width: 25%;"><a href="setJobGroup.html">setJobGroup.default</a></td>
 <td>Assigns a group ID to all the jobs started by this thread until the group ID is set to a different value or cleared.</td></tr>
 <tr><td style="width: 25%;"><a href="setLocalProperty.html">setLocalProperty</a></td>
 <td>Set a local property that affects jobs submitted from this thread, such as the Spark fair scheduler pool.</td></tr>
@@ -1415,6 +1423,10 @@
 <td>Alternating Least Squares (ALS) for Collaborative Filtering</td></tr>
 <tr><td style="width: 25%;"><a href="spark.als.html">spark.als-method</a></td>
 <td>Alternating Least Squares (ALS) for Collaborative Filtering</td></tr>
+<tr><td style="width: 25%;"><a href="spark.powerIterationClustering.html">spark.assignClusters</a></td>
+<td>PowerIterationClustering</td></tr>
+<tr><td style="width: 25%;"><a href="spark.powerIterationClustering.html">spark.assignClusters-method</a></td>
+<td>PowerIterationClustering</td></tr>
 <tr><td style="width: 25%;"><a href="spark.fpGrowth.html">spark.associationRules</a></td>
 <td>FP-growth</td></tr>
 <tr><td style="width: 25%;"><a href="spark.fpGrowth.html">spark.associationRules-method</a></td>
@@ -1427,6 +1439,10 @@
 <td>Decision Tree Model for Regression and Classification</td></tr>
 <tr><td style="width: 25%;"><a href="spark.decisionTree.html">spark.decisionTree-method</a></td>
 <td>Decision Tree Model for Regression and Classification</td></tr>
+<tr><td style="width: 25%;"><a href="spark.prefixSpan.html">spark.findFrequentSequentialPatterns</a></td>
+<td>PrefixSpan</td></tr>
+<tr><td style="width: 25%;"><a href="spark.prefixSpan.html">spark.findFrequentSequentialPatterns-method</a></td>
+<td>PrefixSpan</td></tr>
 <tr><td style="width: 25%;"><a href="spark.fpGrowth.html">spark.fpGrowth</a></td>
 <td>FP-growth</td></tr>
 <tr><td style="width: 25%;"><a href="spark.fpGrowth.html">spark.fpGrowth-method</a></td>
@@ -1536,8 +1552,6 @@
 <tr><td style="width: 25%;"><a href="column_string_functions.html">split_string-method</a></td>
 <td>String functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="sql.html">sql</a></td>
-<td>SQL Query</td></tr>
-<tr><td style="width: 25%;"><a href="sql.html">sql.default</a></td>
 <td>SQL Query</td></tr>
 <tr><td style="width: 25%;"><a href="column_math_functions.html">sqrt</a></td>
 <td>Math functions for Column operations</td></tr>
@@ -1662,11 +1676,7 @@
 <table width="100%">
 <tr><td style="width: 25%;"><a href="tableNames.html">tableNames</a></td>
 <td>Table Names</td></tr>
-<tr><td style="width: 25%;"><a href="tableNames.html">tableNames.default</a></td>
-<td>Table Names</td></tr>
 <tr><td style="width: 25%;"><a href="tables.html">tables</a></td>
-<td>Tables</td></tr>
-<tr><td style="width: 25%;"><a href="tables.html">tables.default</a></td>
 <td>Tables</td></tr>
 <tr><td style="width: 25%;"><a href="tableToDF.html">tableToDF</a></td>
 <td>Create a SparkDataFrame from a SparkSQL table or view</td></tr>
@@ -1694,6 +1704,10 @@
 <td>Math functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_math_functions.html">toRadians-method</a></td>
 <td>Math functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">to_csv</a></td>
+<td>Collection functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_collection_functions.html">to_csv-method</a></td>
+<td>Collection functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_datetime_functions.html">to_date</a></td>
 <td>Date time functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_datetime_functions.html">to_date-method</a></td>
@@ -1737,8 +1751,6 @@
 <td>String functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="uncacheTable.html">uncacheTable</a></td>
 <td>Uncache Table</td></tr>
-<tr><td style="width: 25%;"><a href="uncacheTable.html">uncacheTable.default</a></td>
-<td>Uncache Table</td></tr>
 <tr><td style="width: 25%;"><a href="column_math_functions.html">unhex</a></td>
 <td>Math functions for Column operations</td></tr>
 <tr><td style="width: 25%;"><a href="column_math_functions.html">unhex-method</a></td>
@@ -1747,10 +1759,10 @@
 <td>Return a new SparkDataFrame containing the union of rows</td></tr>
 <tr><td style="width: 25%;"><a href="union.html">union-method</a></td>
 <td>Return a new SparkDataFrame containing the union of rows</td></tr>
-<tr><td style="width: 25%;"><a href="union.html">unionAll</a></td>
-<td>Return a new SparkDataFrame containing the union of rows</td></tr>
-<tr><td style="width: 25%;"><a href="union.html">unionAll-method</a></td>
-<td>Return a new SparkDataFrame containing the union of rows</td></tr>
+<tr><td style="width: 25%;"><a href="unionAll.html">unionAll</a></td>
+<td>Return a new SparkDataFrame containing the union of rows.</td></tr>
+<tr><td style="width: 25%;"><a href="unionAll.html">unionAll-method</a></td>
+<td>Return a new SparkDataFrame containing the union of rows.</td></tr>
 <tr><td style="width: 25%;"><a href="unionByName.html">unionByName</a></td>
 <td>Return a new SparkDataFrame containing the union of rows, matched by column names</td></tr>
 <tr><td style="width: 25%;"><a href="unionByName.html">unionByName-method</a></td>
@@ -1901,6 +1913,15 @@
 <td>Save the content of SparkDataFrame in a text file at the specified path.</td></tr>
 <tr><td style="width: 25%;"><a href="write.text.html">write.text-method</a></td>
 <td>Save the content of SparkDataFrame in a text file at the specified path.</td></tr>
+</table>
+
+<h2><a name="X">-- X --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="column_misc_functions.html">xxhash64</a></td>
+<td>Miscellaneous functions for Column operations</td></tr>
+<tr><td style="width: 25%;"><a href="column_misc_functions.html">xxhash64-method</a></td>
+<td>Miscellaneous functions for Column operations</td></tr>
 </table>
 
 <h2><a name="Y">-- Y --</a></h2>
